@@ -2,8 +2,8 @@ language: c
 sudo: false
 cache:
   directories:
-    - ~/arduino_ide
-    - ~/.arduino15/packages/
+    - ~/arduinoIDE
+    - ~$HOME/AppData/Local/Arduino15/packages/
 git:
   depth: false
   quiet: true
