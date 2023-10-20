@@ -63,7 +63,7 @@ fi
 cd $BUILD_DIR
 
 # The default version of doxygen is too old so we'll use a modern version
-wget -q https://cdn-learn.adafruit.com/assets/assets/000/067/405/original/doxygen-1.8.13.linux.bin.tar.gz
+wget -q https://github.com/techsd/SX126x-Arduino/releases/download/2.0.21/doxygen-1.8.13.linux.bin.tar.gz
 tar -xf doxygen-1.8.13.linux.bin.tar.gz
 mv doxygen-1.8.13/bin/doxygen .
 chmod +x doxygen
@@ -114,7 +114,7 @@ export DOXYFILE=${BUILD_DIR}/Doxyfile
 if [ ! -f ${DOXYFILE} ]; then
     echo "Grabbing default Doxyfile"
 
-    curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/Doxyfile.default > ${DOXYFILE}
+    curl -SLs https://github.com/techsd/SX126x-Arduino/blob/techsd/Doxyfile.default > ${DOXYFILE}
     #sed -i "s/^INPUT .*/INPUT = ..\/../"  ${DOXYFILE}
 
     # If we can, fix up the name
