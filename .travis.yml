@@ -11,7 +11,7 @@ addons:
   apt:
     sources:
       - llvm-toolchain-trusty-5.0
-      - key_url: 'https://github.com/techsd/SX126x-Arduino/blob/techsd/llvm-snapshot.gpg.key'
+      - key_url: 'https://github.com/techsd/SX126x-Arduino/blob/master/llvm-snapshot.gpg.key'
     packages:
       - python3-pip
       - python3-wheel
@@ -24,8 +24,8 @@ env:
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 
 before_install:
-   - source <(curl -SLs https://github.com/techsd/SX126x-Arduino/blob/techsd/install.sh)
-   - curl -SLs https://github.com/techsd/SX126x-Arduino/blob/techsd/run-clang-format.py > run-clang-format.py
+   - source <(curl -SLs https://github.com/techsd/SX126x-Arduino/blob/master/install.sh)
+   - curl -SLs https://github.com/techsd/SX126x-Arduino/blob/master/run-clang-format.py > run-clang-format.py
 
 script:
 #   - python run-clang-format.py -r .
@@ -42,5 +42,5 @@ script:
 
 # Generate and deploy documentation
 after_success:
-  - source <(curl -SLs  https://github.com/techsd/SX126x-Arduino/blob/techsd/library_check.sh)
-  # - source <(curl -SLs  https://github.com/techsd/SX126x-Arduino/blob/techsd/doxy_gen_and_deploy.sh)
+  - source <(curl -SLs  https://github.com/techsd/SX126x-Arduino/blob/master/library_check.sh)
+  # - source <(curl -SLs  https://github.com/techsd/SX126x-Arduino/blob/master/doxy_gen_and_deploy.sh)

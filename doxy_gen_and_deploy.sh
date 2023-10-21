@@ -114,7 +114,7 @@ export DOXYFILE=${BUILD_DIR}/Doxyfile
 if [ ! -f ${DOXYFILE} ]; then
     echo "Grabbing default Doxyfile"
 
-    curl -SLs https://github.com/techsd/SX126x-Arduino/blob/techsd/Doxyfile.default > ${DOXYFILE}
+    curl -SLs https://github.com/techsd/SX126x-Arduino/blob/master/Doxyfile.default > ${DOXYFILE}
     #sed -i "s/^INPUT .*/INPUT = ..\/../"  ${DOXYFILE}
 
     # If we can, fix up the name

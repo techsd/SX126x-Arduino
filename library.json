@@ -35,7 +35,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/techsd/SX126x-Arduino/tree/techsd"
+		"url": "https://github.com/techsd/SX126x-Arduino/"
 	},
-	"homepage": "https://github.com/techsd/SX126x-Arduino/tree/techsd"
+	"homepage": "https://github.com/techsd/SX126x-Arduino/"
 }
